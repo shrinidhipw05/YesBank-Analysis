@@ -1,9 +1,16 @@
 # 📈 Yes Bank Stock Price Prediction
 
 ## 📝 Project Overview
-Yes Bank is a prominent private sector bank in India whose stock performance was historically robust and stable. However, following a major corporate governance crisis in 2018 involving alleged financial mismanagement, the bank's valuation experienced a catastrophic collapse. This severe structural break created extreme market volatility and drastically shifted the baseline valuation of the stock.
+The primary objective of this capstone project is to develop a highly accurate machine learning regression model capable of predicting the monthly closing price of Yes Bank's stock. This project tackles significant data challenges—specifically, navigating extreme multicollinearity and a non-stationary target distribution caused by a severe structural break in the stock's history.
 
-The primary objective of this capstone project is to develop a highly accurate machine learning regression model capable of predicting the monthly closing price of Yes Bank's stock, navigating significant data challenges such as extreme multicollinearity and a non-stationary target distribution.
+## 🏦 Background: The Rise and Fall of Yes Bank
+To understand the unique challenges of this dataset, it is essential to understand the bank's history:
+*   **Rapid Rise:** Founded in 2004, Yes Bank grew meteorically to become one of India's largest private-sector lenders. It was highly favored by investors and known for aggressive corporate lending.
+*   **The 2018 Crisis:** The bank's rapid growth masked severe underlying issues, including reckless lending to distressed companies (such as IL&FS and DHFL) and the under-reporting of Non-Performing Assets (NPAs). When these massive bad loans came to light in 2018, it triggered a major corporate governance crisis. 
+*   **The Collapse:** The crisis caused depositors to withdraw funds rapidly, and the bank was unable to raise capital. Yes Bank's stock, which traded at nearly ₹400 in 2018, plummeted by roughly 85% to single digits.
+*   **RBI Intervention:** To prevent a systemic banking collapse, the Reserve Bank of India (RBI) intervened in 2020. The RBI took over the bank's management, imposed a 30-day moratorium capping customer withdrawals, and orchestrated a bailout led by the State Bank of India (SBI). 
+
+*This history explains the "structural break" in the data—the stock's behavior before the 2018 crisis was fundamentally different from its behavior during and after the crash, requiring advanced feature engineering to build a reliable predictive model.*
 
 ## 📂 Repository Contents
 *   **`data_YesBank_StockPrices.csv`**: The raw historical monthly stock dataset containing Open, High, Low, and Close prices.
